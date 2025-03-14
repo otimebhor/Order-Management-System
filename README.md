@@ -69,12 +69,22 @@ $ npm install
 Create a .env file in the root directory and configure the following environment variables:
 
 ```bash
-DATABASE_URL=postgresql://username:password@localhost:5432/database_name
-JWT_SECRET=your_jwt_secret_key
-```
-- DATABASE_URL: The URL of your PostgreSQL database.
-- secret: A secret key for signing JWT tokens.
 
+PORT=3000
+
+# Database
+DB_HOST=your_database_host
+DB_PORT=your_database_port
+DB_USERNAME=your_database_username
+DB_PASSWORD=your_database_passwword
+DB_NAME=your_database_name
+
+# JWT
+JWT_SECRET=your_jwt_secret_key_here
+
+# RabbitMQ
+RABBITMQ_URL=your_rabbit_mq_url
+```
 4. Run database migrations
 ```bash
 npm run migration:run 
@@ -90,10 +100,10 @@ npm run start:dev
 ```bash
 npm run start:orders-microservice
 ```
-The application should now be running at http://localhost:3025.
+The application should now be running at http://localhost:${PORT}.
 
 ## API Documentation
-The API Documentation can be found and tested on [Swagger] (http://localhost:3025/api)
+The API Documentation can be found and tested on [Swagger] (http://localhost:${PORT}/api)
 
 
 ## API Documentation
