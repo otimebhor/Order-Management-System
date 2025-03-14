@@ -100,10 +100,10 @@ npm run start:dev
 ```bash
 npm run start:orders-microservice
 ```
-The application should now be running at http://localhost:3025.
+The application should now be running at http://localhost:${PORT}.
 
 ## API Documentation
-The API Documentation can be found and tested on [Swagger] (http://localhost:3025/api)
+The API Documentation can be found and tested on [Swagger] (http://localhost:${PORT}/api)
 
 
 ## API Documentation
