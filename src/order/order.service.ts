@@ -135,7 +135,7 @@ export class OrderService {
   /**
    * Calculate total order amount from order items
    */
-  private calculateTotal(orderItems: OrderItem[]): number {
+  private calculateTotal(orderItems: OrderItem[]) {
     return orderItems.reduce(
       (total, item) => total + item.price * item.quantity,
       0,
